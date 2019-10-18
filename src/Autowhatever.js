@@ -92,7 +92,7 @@ export default class Autowhatever extends Component {
     this.ensureHighlightedItemIsVisible();
   }
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     if (nextProps.items !== this.props.items) {
       this.setSectionsItems(nextProps);
     }
